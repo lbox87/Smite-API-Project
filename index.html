@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="National Park Service API Project" content="National Park Service API Project">
+
+    <title>National Park Service API Project</title>
+
+    <!-- stylesheets -->
+    <link href="float-grid.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+    <!-- font -->
+
+    <!-- responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery and js scripts -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header role="banner">
+    </header>
+    <main role="main">
+
+        <div class="container">
+            <h1>National Park Finder</h1>
+
+            <form id="js-form">
+                <label for="search-term">Search term</label>
+                <input type="text" name="search-term" id="js-search-term" required>
+
+                <label for="max-results">Maximum results to return</label>
+                <input type="number" name="max-results" id="js-max-results" value="10">
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <p id="js-error-message" class="error-message"></p>
+            <section id="results" class="hidden">
+                <h2>Search results</h2>
+                <ul id="results-list">
+                </ul>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>
